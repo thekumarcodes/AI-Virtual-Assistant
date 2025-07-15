@@ -1,0 +1,32 @@
+
+    
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AI Virtual Friend</title>
+
+    <link rel="stylesheet" href="./static/style.css">
+  
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>  
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your AI's Personality</h1>
+        <form id="chat-form">
+            <select id="personality" name="personality">
+                <option value="friendly">Friendly</option>
+                <option value="sarcastic">Sarcastic</option>
+                <option value="professional">Professional</option>
+            </select>
+
+            <br><br>
+            <input type="text" id="message" name="message" placeholder="Type your message here..." required>
+            <br><br>
+            <button type="submit">Send</button>
+        </form>
+
+        <div id="response-box"></div>
+    </div>
+</body>
+</html>
